@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trang Đăng Ký Tầng</title>
+  <link rel="stylesheet" type="text/css" href="../css/css_for_insert.css">
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <div class="form-header">
+      <h1>Thông Tin Tầng</h1>
+    </div>
+    <div class="form-body">
+      <form action="floor.php" method="post">
+        <div class="form-group">
+          <label for="Floor_Number">Số Tầng</label>
+          <input type="text" id="Floor_Number" name="Floor_Number" required placeholder="Nhập số tầng" />
+        </div>
+        <div class="form-group">
+          <label for="Block">Khối</label>
+          <input type="text" id="Block" name="Block" required placeholder="Nhập khối" />
+        </div>
+        <div class="form-group">
+          <label for="Num_of_Kitchen">Số Nhà Bếp</label>
+          <input type="number" id="Num_of_Kitchen" name="Num_of_Kitchen" required placeholder="Nhập số nhà bếp" />
+        </div>
+        <div class="form-group">
+          <label for="Num_of_Room">Số Phòng</label>
+          <input type="number" id="Num_of_Room" name="Num_of_Room" required placeholder="Nhập số phòng" />
+        </div>
+        <div class="form-group">
+          <label for="Num_of_Washroom">Số Phòng Tắm</label>
+          <input type="number" id="Num_of_Washroom" name="Num_of_Washroom" required placeholder="Nhập số phòng tắm" />
+        </div>
+        <input type="submit" value="GỬI" class="btn" />
+      </form>
+    </div>
+    <div class="form-footer">
+      <a href="DispHall.php" class="btn"><b>Quay lại</b></a>
+      <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
+    </div>
+  </div>
+</div>
+</body>
+</html>

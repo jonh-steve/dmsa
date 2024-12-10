@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Ký</title>
+  <link rel="stylesheet" type="text/css" href="../css/css_for_insert.css" />
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <div class="form-header">
+      <h1>Thông Tin Nhân Viên</h1>
+    </div>
+    <div class="form-body">
+      <form action="Staff.php" method="post">
+        <div class="form-group">
+          <label for="S_ID">Mã Nhân Viên</label>
+          <input type="number" id="S_ID" name="S_ID" required />
+        </div>
+        <div class="form-group">
+          <label for="Name">Tên</label>
+          <input type="text" id="Name" name="Name" required />
+        </div>
+        <div class="form-group">
+          <label for="Address">Địa Chỉ</label>
+          <input type="text" id="Address" name="Address" required />
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" id="Email" name="Email" required />
+        </div>
+        <div class="form-group">
+          <label for="Designation">Chức Vụ</label>
+          <input type="text" id="Designation" name="Designation" required />
+        </div>
+        <input type="submit" class="btn" value="GỬI" />
+      </form>
+    </div>
+    <div class="form-footer">
+      <a href="DispStaff.php" class="btn"><b>Quay Lại</b></a>
+      <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
+    </div>
+  </div>
+</div>
+</body>
+</html>

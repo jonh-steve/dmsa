@@ -1,0 +1,136 @@
+*{
+/*    reset css*/
+    margin: 0;
+
+}
+body {
+    margin: 0;
+}
+
+/* navbar style starts here */
+.slidebar {
+    border: 20px;
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    background-color: #E0FFFF;
+}
+
+.slidebar header {
+    padding: 30px 10px;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(16, 95, 98);
+}
+
+.slidebar header span {
+    font-size: 50px;
+    color: rgb(89, 161, 87);
+}
+
+.slidebar ul li {
+    list-style: none;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.slidebar ul li:hover {
+    background-color: rgba(89, 150, 152, 0.8);
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.slidebar ul li a {
+    text-decoration: none;
+}
+
+/* body decoration starts */
+.mainpart {
+    background-image: url(../../images/images.jpg);
+    width: 85%;
+    height: 100vh;
+    float: right;
+    position: relative;
+    background-size: cover;
+}
+
+.infocard {
+    margin: 30px;
+    margin-top: 20px;
+    width: 80%;
+    height: 585px;
+    position: fixed;
+    text-align: center;
+}
+
+.cardspecific {
+    position: relative;
+    float: left;
+    font-size: 1.5em ;
+    line-height: 1.5;
+    padding-top: 20px;
+    width: 200px;
+    height: 150px;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: bolder;
+    color: rgb(9, 9, 84);
+    border: green;
+    background: lightcyan;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.cardspecific:hover {
+    transform: scale(1.1);
+    background: rgba(52, 177, 254, 0.813);
+    transition: 0.8s;
+}
+
+.number {
+    font-size: 25px;
+    /*padding-top: 40px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 10px;
+    color: rgb(85, 12, 99);
+}
+
+/* logout button */
+.logout {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: bolder;
+}
+.logout img {
+    margin-left: 1em;
+    max-width: 40px;
+    max-height: 40px;
+    height: auto;
+    width: auto;
+}
+
+.logout:hover {
+    transform: scale(-0.8);
+    transition: 1s;
+}
+
+#hall {
+    padding: 0 10px;
+    box-shadow: 0px 4px 8px rgba(29, 247, 255, 0.71);
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 35px;
+    color: black;
+
+}

@@ -1,0 +1,230 @@
+/* css cho hien thị thông tin  */
+/* Reset mặc định của trình duyệt */
+/*  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Định dạng chung cho body */
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  /*color: white;*/
+  margin: 0;
+  padding: 0;
+}
+
+/* Container chứa bảng */
+.table-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Bảng */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table-container th, 
+.table-container td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Nút hành động */
+.button {
+  background-color: #4CAF50;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  text-align: center;
+
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button.add {
+  background-color: #4CAF50;
+}
+
+.button.add:hover {
+  background-color: #45a049;
+}
+
+.button.delete {
+  background-color: #f44336;
+}
+
+.button.delete:hover {
+  background-color: #d32f2f;
+}
+
+.button.update {
+  background-color: #2196F3;
+}
+
+.button.update:hover {
+  background-color: #1976D2;
+}
+
+/* Container căn giữa các nút */
+.center-buttons {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 20px;
+
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .table-container table, 
+  .table-container th, 
+  .table-container td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .center-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/*text_content title*/
+ .text_content{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 40px;
+   font-family: 'Times New Roman', Times, serif;
+   font-style: italic;
+   font-weight: bold;
+
+}
+ /*center-container*/
+.center-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  height: 100%;
+  background-color: #f1f1f1;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/*opptoin actions*/
+.actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.actions:hover{
+  color: #4CAF50;
+}
+/*action button*/
+/*.action-button{*/
+/*  background-color: #4CAF50;*/
+/*  padding: 10px 20px;*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*  text-align: center;*/
+/*  color: white;*/
+/*  transition: background-color 0.3s ease;*/
+/*}*/
+.actions a {
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+#delete {
+  background-color: #f32121;
+}
+#update {
+  background-color: #008CBA;
+}
+/*input */
+/* CSS cho input field */
+input[type="number"] {
+  width: 300px; /* Độ rộng của input */
+  padding: 10px; /* Khoảng đệm bên trong input */
+  margin: 8px 0; /* Khoảng cách phía trên và dưới */
+  box-sizing: border-box; /* Đảm bảo padding không tăng kích thước tổng */
+  border: 1px solid #ccc; /* Viền của input */
+  border-radius: 4px; /* Bo tròn góc */
+  font-size: 16px; /* Cỡ chữ */
+  transition: border-color 0.2s; /* Hiệu ứng khi hover */
+}
+
+input[type="number"]:focus {
+  border-color: #5bc0de; /* Đổi màu viền khi input được focus */
+  outline: none; /* Bỏ viền xanh dương mặc định khi focus */
+}
+
+/* CSS cho button */
+button {
+  padding: 10px 15px; /* Khoảng đệm của button */
+  background-color: #5bc0de; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Bỏ viền mặc định */
+  border-radius: 4px; /* Bo tròn góc */
+  cursor: pointer; /* Hiển thị dạng con trỏ khi hover */
+  font-size: 16px; /* Cỡ chữ */
+  transition: background-color 0.2s; /* Hiệu ứng khi hover */
+}
+
+button:hover {
+  background-color: #31b0d5; /* Đổi màu nền khi hover */
+}
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Ký Vấn Đề Cơ Sở Vật Chất</title>
+  <link rel="shortcut icon" href="../images/logomeo.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/css_for_insert.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="form-container">
+    <div class="form-header">
+      <h1>Trang Đăng Ký Vấn Đề Cơ Sở Vật Chất</h1>
+    </div>
+    <form action="FP.php" method="post" class="form-body">
+      <!-- Số Phòng -->
+      <div class="form-group">
+        <label for="Room_Number">Số Phòng</label>
+        <input type="text" id="Room_Number" name="Room_Number" required placeholder="Nhập số phòng">
+      </div>
+      <!-- Quạt Hỏng (Chưa Giải Quyết) -->
+      <div class="form-group">
+        <label for="Damaged_Fan_Un">Quạt Hỏng (Chưa Giải Quyết)</label>
+        <input type="number" id="Damaged_Fan_Un" name="Damaged_Fan_Un" placeholder="Nhập số quạt hỏng chưa giải quyết">
+      </div>
+      <!-- Quạt Hỏng (Đang Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Fan_Pro">Quạt Hỏng (Đang Xử Lý)</label>
+        <input type="number" id="Damaged_Fan_Pro" name="Damaged_Fan_Pro" placeholder="Nhập số quạt hỏng đang xử lý">
+      </div>
+      <!-- Quạt Hỏng (Đã Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Fan_Sol">Quạt Hỏng (Đã Xử Lý)</label>
+        <input type="number" id="Damaged_Fan_Sol" name="Damaged_Fan_Sol" placeholder="Nhập số quạt hỏng đã xử lý">
+      </div>
+      <!-- Đèn Hỏng (Chưa Giải Quyết) -->
+      <div class="form-group">
+        <label for="Damaged_Light_Un">Đèn Hỏng (Chưa Giải Quyết)</label>
+        <input type="number" id="Damaged_Light_Un" name="Damaged_Light_Un" placeholder="Nhập số đèn hỏng chưa giải quyết">
+      </div>
+      <!-- Đèn Hỏng (Đang Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Light_Pro">Đèn Hỏng (Đang Xử Lý)</label>
+        <input type="number" id="Damaged_Light_Pro" name="Damaged_Light_Pro" placeholder="Nhập số đèn hỏng đang xử lý">
+      </div>
+      <!-- Đèn Hỏng (Đã Xử Lý) -->
+      <div class="form-group">
+        <label for="Damaged_Light_Sol">Đèn Hỏng (Đã Xử Lý)</label>
+        <input type="number" id="Damaged_Light_Sol" name="Damaged_Light_Sol" placeholder="Nhập số đèn hỏng đã xử lý">
+      </div>
+      <!-- Ngày chỉnh sửa -->
+      <div class="form-group">
+        <label for="Modified_Date">Ngày Chỉnh Sửa</label>
+        <input type="date" id="Modified_Date" name="Modified_Date" required>
+      </div>
+      <!-- Nút Gửi -->
+      <div class="form-footer">
+        <input type="submit" value="Gửi" class="btn">
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+
+</html>

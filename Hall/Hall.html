@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Ký</title>
+  <link rel="stylesheet" type="text/css" href="../css/css_for_insert.css" />
+</head>
+
+<body>
+<div class="container">
+  <div class="form-container">
+    <div class="form-header">
+      <h1>THÔNG TIN KÝ TÚC XÁ</h1>
+    </div>
+    <div class="form-body">
+      <form action="Hall.php" method="post">
+        <!-- Mã Ký Túc Xá -->
+        <div class="form-group">
+          <label for="H_ID">Mã Ký Túc Xá</label>
+          <input type="number" id="H_ID" name="H_ID" required placeholder="Nhập mã ký túc xá" />
+        </div>
+
+        <!-- Tên Ký Túc Xá -->
+        <div class="form-group">
+          <label for="H_Name">Tên Ký Túc Xá</label>
+          <input type="text" id="H_Name" name="H_Name" required placeholder="Nhập tên ký túc xá" />
+        </div>
+
+        <!-- Tổng Số Chỗ -->
+        <div class="form-group">
+          <label for="T_Seat">Tổng Số Chỗ</label>
+          <input type="number" id="T_Seat" name="T_Seat" required placeholder="Nhập tổng số chỗ" />
+        </div>
+
+        <!-- Số Chỗ Còn Trống -->
+        <div class="form-group">
+          <label for="A_Seat">Số Chỗ Còn Trống</label>
+          <input type="number" id="A_Seat" name="A_Seat" required placeholder="Nhập số chỗ còn trống" />
+        </div>
+
+        <!-- Số Lượng Sinh Viên -->
+        <div class="form-group">
+          <label for="N_Student">Số Lượng Sinh Viên</label>
+          <input type="number" id="N_Student" name="N_Student" required placeholder="Nhập số lượng sinh viên" />
+        </div>
+
+        <input type="submit" value="GỬI" class="btn" />
+      </form>
+    </div>
+    <div class="form-footer">
+      <a href="DispHall.php" class="btn"><b>Quay lại</b></a>
+      <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
+    </div>
+  </div>
+</div>
+
+<script src="../js/dot.js"></script>
+</body>
+
+</html>

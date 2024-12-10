@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Đăng Ký Phòng</title>
+  <link rel="stylesheet" type="text/css" href="../css/css_for_insert.css"> <!-- Link đến file CSS của bạn -->
+</head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <div class="form-header">
+      <h1>Thông Tin Phòng</h1>
+    </div>
+    <div class="form-body">
+      <form action="Room.php" method="post">
+        <div class="form-group">
+          <label for="Room_Number">Số Phòng</label>
+          <input type="number" id="Room_Number" name="Room_Number" required placeholder="Nhập số phòng" />
+        </div>
+        <div class="form-group">
+          <label for="Num_of_Table">Số Bàn</label>
+          <input type="number" id="Num_of_Table" name="Num_of_Table" required placeholder="Nhập số bàn" />
+        </div>
+        <div class="form-group">
+          <label for="Num_of_Bed">Số Giường</label>
+          <input type="number" id="Num_of_Bed" name="Num_of_Bed" required placeholder="Nhập số giường" />
+        </div>
+        <div class="form-group">
+          <label for="Floor_Number">Số Tầng</label>
+          <input type="text" id="Floor_Number" name="Floor_Number" required placeholder="Nhập số tầng" />
+        </div>
+        <input type="submit" value="GỬI" class="btn" />
+      </form>
+    </div>
+    <div class="form-footer">
+      <a href="DispRoom.php" class="btn"><b>Quay lại</b></a>
+      <small>&copy; Hệ Thống Quản Lý Ký Túc Xá</small>
+    </div>
+  </div>
+</div>
+</body>
+</html>

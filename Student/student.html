@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Ký Thông Tin Sinh Viên</title>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <div class="panel">
+        <div class="panel-header">
+          <h1>Thông Tin Sinh Viên</h1>
+        </div>
+        <div class="panel-body">
+          <form action="student.php" method="post">
+            <div class="form-group">
+              <label for="Stu_id">Mã Sinh Viên</label>
+              <input type="number" id="Stu_id" name="Stu_id" required />
+            </div>
+            <div class="form-group">
+              <label for="Name">Họ và Tên</label>
+              <input type="text" id="Name" name="Name" required />
+            </div>
+            <div class="form-group">
+              <label for="Department">Khoa</label>
+              <input type="text" id="Department" name="Department" required />
+            </div>
+            <div class="form-group">
+              <label for="Session">Niên Khóa</label>
+              <input type="text" id="Session" name="Session" required />
+            </div>
+            <div class="form-group">
+              <label for="hall">Ký Túc Xá</label>
+              <select id="hall" name="hall">
+                <option value="1">Ký Túc Xá khu I</option>
+                <option value="2">Ký Túc Xá khu II</option>
+                <option value="3">Ký Túc Xá khu III</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="Room_Number">Số Phòng</label>
+              <input type="number" id="Room_Number" name="Room_Number" required />
+            </div>
+            <div class="form-group">
+              <label for="Floor_Number">Số Tầng</label>
+              <input type="text" id="Floor_Number" name="Floor_Number" required />
+            </div>
+            <input type="submit" value="GỬI" class="btn submit-btn" />
+          </form>
+        </div>
+        <div class="panel-footer">
+          <button><a href="DispStudent.php" class="btn back-btn">Quay lại</a></button>
+          <small>&copy; Hệ thống Quản lý Ký Túc Xá</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
